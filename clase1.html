@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>
+    Clase 1 javascript
+</title>
+<script>
+      console.log("Hola mundo, bienvenido a desarrollo web fullstack nivel intermedio"); // impresion de mensaje
+
+      window.alert("Hola Mundo");
+      alert("nombre de ustedes ");
+
+      // vamos a realizar operaciones matematicos
+
+      /*
+      comentario textual
+      
+      */
+
+      console.log("Info ");
+
+     /* var d1= parseInt (prompt("Numero 1")) // parseint , llamar a entero, prompt validacion del dato
+      var d2= parseInt (prompt("Numero 2"))
+      var d3=  (prompt("Operacion "))*/
+
+      /*function operaciones()
+      {
+            if(d3=="suma"){console.log(d1+d2)}
+            if(d3=="resta"){console.log(d1-d2)}
+            if(d3=="multiplicacion"){console.log(d1*d2)}
+            if(d3=="division"){console.log(d1/d2)}
+            if(d3=="potencia"){console.log(Math.pow(d1,d2))}
+            operaciones(d1,d2,"Sumar");
+      }*/
+
+      function operaciones(sum1, sum2)
+      {
+        let resultado;
+        resultado =sum1 + sum2;
+        return resultado; // devolver el resultado
+      }
+
+      alert("2 + 3 =" + operaciones(2,3))
+
+var valor1 = prompt("Ingrese un valor"); // valor 1 
+
+valor1 = parseInt(valor1)
+
+var valor2 = prompt("Ingrese otro valor"); // valor 2
+
+valor2 = parseInt(valor2);
+
+var suma = valor1 + valor2;
+
+alert("la suma es " + suma);
+
+var resta = valor1 - valor2;
+
+alert("la resta es " + resta);
+
+var multiplicar = valor1 * valor2;
+
+alert("la multiplicacion es " + multiplicar);
+
+var dividir = valor1 / valor2;
+
+alert("la division es " + dividir);
+
+var potencia = Math.pow(valor1, valor2);
+
+alert("la potencia es " + potencia);
+
+// raiz cuadrada sqrt y logaritmo log
+
+</script>
+</head>
+</html>
