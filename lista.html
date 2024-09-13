@@ -1,0 +1,150 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title> MI PRIMER FORMULARIO EN HTML</title>
+
+    </head>
+
+    <script>
+        window.addEventListener("load", function(){ // se carga las validaciones
+   {
+         var registro = document.getElementById("button");
+         boton.addEventListener("click", function(e){ // se pulsa el clic
+         var valida = validacampos(); // objeto valida, variable var = validacampos
+         // paramatros
+ 
+          if(!valida){  // con el signo de admiracion es xq no guarda datos
+             e.prevcentDefault();
+          }
+         });
+       }});
+        
+            function validacampos()
+            {
+               var tipo = document.getElementById('tipo').value;
+               var identificacion = document.getElementById('identificacion').value;
+               var nombre = document.getElementById('nombre').value;
+               var apellidos = document.getElementById('apellidos').value;
+               var direccion = document.getElementById('direccion').value;
+               var telefono = document.getElementById('telefono').value;
+               var email = document.getElementById('email').value;
+               var genero = document.getElementById('genero').value;
+
+               var alerta;
+               var camposvalidados = true;
+
+               if(tipo.length==0){ // longitud de caracteres
+                   alerta += 'tipo de identificacion requerida';
+               }
+               if(numero.length==0){
+                   alerta += 'numero de identificacion requerida';
+                }
+                if(nombre.length==0){
+                    alerta += 'nombre requerido';
+                }
+                if(apellido.length==0){
+                        alerta += 'apellido requerido';
+                }
+         if(direccion.length==0){
+                   alerta += 'direccion requerida';
+        }  
+        if(telefono.length==0){
+                   alerta += 'telefono requerido'; 
+        }
+        if(correo.length==0){
+                   alerta += 'correo requerida';
+        }
+        if(masculino.length==0){
+                   alerta += 'masculino requerido';
+        }
+        if(femenino.length==0){
+                   alerta += 'femenino requerido';
+        }
+            return camposvalida
+       
+
+    </script>
+
+    <body>
+        <h1 align="center"> <font face="Arial"> MI PRIMER FORMULARIO </font></h1>
+        <br>
+        <form action="lista.html" method="get">
+        <!-- form representa la declaracion y redireccionamiento de una pagina a otra--
+        action: es un atributo que determina la accion que se debe realizarse al pulsar el 
+        boton de ejecucion-->
+
+        <table align="center" border="1" style="width:900px">
+            <tr>
+                <td> Tipo de identificacion </td>    
+                <td> 
+                    <select name="tipo" size="1" id="tipo">
+                        <option value=""> -Seleccione-</option>
+                        <option value="Cedula de Ciudadania"> Cedula de Ciudadania</option>
+                        <option value="Cedula de Extranjeria"> Cedula de Extranjeria</option>
+                        <option value="Pasaporte"> Pasaporte</option>
+                        <option value="Tarjeta de identidad"> Tarjeta de identidad</option>
+                        <option value="PEP"> PEP</option>
+                    </select> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Numero de identificacion </td>    
+                <td> 
+                    <input type="text" name="identificacion" id="identificacion"
+                     placeholder="ingresar numero de identificacion" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Nombre</td>    
+                <td> 
+                    <input type="text" name="nombre" id="nombre"
+                     placeholder="ingresar nombre" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Apellidos</td>    
+                <td> 
+                    <input type="text" name="apellidos" id="apellidos"
+                     placeholder="ingresar apellidos" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Direccion</td>    
+                <td> 
+                    <input type="text" name="direccion" id="direccion"
+                     placeholder="ingresar telefono" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Telefono</td>    
+                <td> 
+                    <input type="text" name="telefono" id="telefono"
+                     placeholder="ingresar telefono" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Email</td>    
+                <td> 
+                    <input type="text" name="correo" id="correo"
+                     placeholder="ingresar correo" required/> 
+                </td>    
+            </tr>
+            <tr>
+                <td> Genero</td>    
+                <td> 
+                    Masculino<input type="radio" name="genero" id="masculino" required/>
+                    Femenino<input type="radio" name="genero"  id="femenino" required/>  
+                </td>    
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Enviar</button>
+                    <input type="reset" value="Borrar"/> 
+                </td>    
+            </tr>
+        </table>
+    </form>
+    </body>
+
+</html>    
